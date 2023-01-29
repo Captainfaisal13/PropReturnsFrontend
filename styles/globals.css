@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");  */
 @tailwind base;
 @tailwind components;
@@ -28,7 +30,7 @@ nav a {
 }
 
 .font-opensans {
-  font-family: "Open Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 @media (max-width: 1024px) {
@@ -41,4 +43,100 @@ sup {
   position: relative;
   bottom: 1ex;
   font-size: 80%;
+}
+
+.left-to-right {
+  animation: leftToRight 2.5s ease-in-out;
+}
+
+.one {
+  animation: upToDown 2.4s ease-in-out;
+}
+
+.two {
+  animation: upToDown 2.2s ease-in-out;
+}
+
+.three {
+  animation: upToDown 2s ease-in-out;
+}
+
+.four,
+.user {
+  animation: upToDown 1.4s ease-in-out;
+}
+
+.five {
+  animation: upToDown 1.2s ease-in-out;
+}
+
+.six {
+  animation: upToDown 1s ease-in-out;
+}
+
+.nav,
+.map {
+  animation: easeOut 2.35s ease-in-out;
+}
+
+.card1 {
+  animation: topLeftToBottomRight 2.5s ease-in-out;
+}
+
+.card2 {
+  animation: topLeftToBottomRight 2s ease-in-out;
+}
+
+.card3 {
+  animation: topLeftToBottomRight 2s ease-in-out;
+}
+
+.card4 {
+  animation: topLeftToBottomRight 1s ease-in-out;
+}
+
+@keyframes upToDown {
+  from {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes easeOut {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes topLeftToBottomRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20%) translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

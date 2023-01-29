@@ -6,7 +6,7 @@ const Map = () => {
   const coordinates = { lat: 29.742321445214937, lng: -95.42209878705238 };
   return (
     <div
-      className="w-full rounded-xl overflow-hidden"
+      className="hidden sm:block w-full rounded-xl overflow-hidden map"
       style={{ height: "70vh" }}
     >
       <GoogleMapReact

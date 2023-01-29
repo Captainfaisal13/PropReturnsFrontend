@@ -10,14 +10,19 @@ import Map from "./map";
 const Cards = () => {
   // const { data } = React.useContext(AppContext);
   return (
-    <div className="grid grid-cols-2 gap-2 md:gap-8">
-      <div className="grid auto-cols-max gap-4 grid-cols-1 sm:grid-cols-2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-8">
+      <div className="grid auto-cols-max gap-4 grid-cols-2">
         {data.map(
-          ({ _id, price, address, area, bedrooms, bathrooms, image }) => {
+          (
+            { _id, price, address, area, bedrooms, bathrooms, image },
+            index
+          ) => {
             return (
               <div
                 key={_id}
-                className="grid grid-flow-row grid-rows-2 rounded-xl overflow-hidden bg-white drop-shadow-md"
+                className={`grid grid-flow-row grid-rows-2 rounded-xl overflow-hidden bg-white drop-shadow-md card${
+                  index + 1
+                }`}
               >
                 <div
                   className=" row-span-1 bg-cover bg-no-repeat bg-center rounded-xl overflow-hidden drop-shadow-2xl"

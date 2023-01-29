@@ -41,6 +41,7 @@ export default function Home({ launches }) {
 export async function getStaticProps() {
   const client = new ApolloClient({
     uri: "https://propreturnsbackend.onrender.com/",
+    // uri: "http://localhost:4000/",
     cache: new InMemoryCache(),
   });
 

@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <main>
       <div className="flex items-center justify-between">
-        <div className="flex gap-2">
+        <div className="flex gap-2 left-to-right">
           <div className="w-8 rounded-full overflow-hidden">
-            <Image src={PropLogo} alt="logo" className=" w-full" />
+            <Image src={PropLogo} alt="logo" className="w-full" />
           </div>
           <h1 className="text-xl font-bold">PropReturns</h1>
         </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <nav
             className={`${
               !clicked ? "hidden" : "block"
-            } text-xl flex-col absolute z-20 bg-white p-3 md:p-6 lg:p-0 right-0 top-10 md:top-12 w-full lg:static lg:flex-row lg:flex lg:gap-20 lg:text-xs lg:font-bold lg:tracking-wide lg:text-gray-500`}
+            } text-xl flex-col absolute z-20 bg-white p-3 md:p-6 lg:p-0 right-0 top-10 md:top-12 w-full lg:static lg:flex-row lg:flex lg:gap-20 lg:text-xs lg:font-bold lg:tracking-wide lg:text-gray-500 nav`}
           >
             <a
               href="/#"
@@ -84,7 +84,7 @@ const Navbar = () => {
             </a>
           </nav>
         </div>
-        <div className="hidden lg:flex lg:gap-12">
+        <div className="hidden lg:flex lg:gap-12 user">
           <FaHeart className="mt-2 text-gray-400" />
           <div className="w-8 rounded-full overflow-hidden">
             <Image src={UserPic} alt="logo" className=" w-full" />
