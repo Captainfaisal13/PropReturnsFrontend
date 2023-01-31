@@ -74,9 +74,14 @@ sup {
   animation: upToDown 1s ease-in-out;
 }
 
-.nav,
 .map {
   animation: easeOut 2.35s ease-in-out;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    animation: easeOut 2.35s ease-in-out;
+  }
 }
 
 .card1 {
