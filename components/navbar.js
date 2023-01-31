@@ -27,7 +27,7 @@ const Navbar = () => {
           <nav
             className={`${
               !clicked ? "hidden" : "block"
-            } text-xl flex-col absolute z-20 bg-white p-3 md:p-6 lg:p-0 right-0 top-10 md:top-12 w-full lg:static lg:flex-row lg:flex lg:gap-20 lg:text-xs lg:font-bold lg:tracking-wide lg:text-gray-500 nav`}
+            } text-xl flex-col absolute z-20 bg-white p-3 md:p-6 lg:p-0 right-0 top-10 md:top-12 w-full lg:static lg:flex-row lg:flex lg:gap-20 lg:text-xs lg:font-bold lg:tracking-wide lg:text-gray-500 lg:nav`}
           >
             <a
               href="/#"
